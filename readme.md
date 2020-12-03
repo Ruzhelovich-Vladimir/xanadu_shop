@@ -13,4 +13,9 @@
 
 MIT
 
+#Шаблон разметки взят
+
+https://teroni.ru/html-shablony/magaziny-html/2913-html-shablon-internet-magazina-xanadu.html
+
+
 
