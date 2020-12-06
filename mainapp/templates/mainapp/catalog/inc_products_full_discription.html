@@ -1,0 +1,35 @@
+{% load staticfiles %}
+
+<div class="products ver2 grid_full hover-shadow furniture">
+    {% for product in products %}
+    <div class="item-inner">
+        <div class="product">
+            <div class="product-images">
+                <a href="#" title="product-images">
+                    <img class="primary_image" src="{% static product.img %}" alt="" />
+                </a>
+                <div class="action">
+                    <a class="wish" href="#" title="Wishlist"><i class="icon icon-heart"></i></a>
+                    <a class="zoom" href="#" title="Quick view"><i class="icon icon-magnifier-add "></i></a>
+                    <a class="add-cart" href="#" title="Add to cart"><i class="icon-bag"></i></a>
+                </div>
+            </div>
+            <a href="#" title="{{ product.title }}">
+                <p class="product-title">{{ product.title }}</p>
+            </a>
+            <p class="product-price-old">{{ product.old_price }}</p>
+            <p class="product-price">{{ product.price }}</p>
+            <p class="description">{{ product.description }}</p>
+
+            <div class="social box">
+                <h3>Share this :</h3>
+                <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

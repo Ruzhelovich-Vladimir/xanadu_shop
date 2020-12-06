@@ -1,0 +1,22 @@
+{% load staticfiles %}
+   
+   <!-- End pushmenu -->
+    <div class="wrappage">
+        <header id="header" class="header-v1">
+            <div class="header-top">
+                    <div class="container">
+                    <div class="box">
+                        <p class="icon-menu-mobile"><i class="fa fa-bars" ></i></p>
+                        <div class="logo"><a href="home_v1.html#" title="Uno">
+                        <img src="{% static 'assets/images/logo.png' %}" alt="images">
+                        </a></div>
+                        <div class="logo-mobile"><a href="home_v1.html#" title="Xanadu"><img src="{% static 'assets/images/logo.png' %}" alt="Xanadu-Logo"></a></div> 
+
+                    {% include 'mainapp/includes/inc_menu-right.html' %}
+                    {% include 'mainapp/includes/inc_menu-center.html' %}
+                    </div>                
+                    </div>
+                    <!-- End container -->
+                </div>
+                <!-- End header-top -->
+        </header><!-- /header -->

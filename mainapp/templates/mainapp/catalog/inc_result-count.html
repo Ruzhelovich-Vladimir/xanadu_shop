@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+<div class="container">
+    <div class="wrap-breadcrumb">
+        <div class="ordering">
+            <div class="float-left">
+                <span class="col active"></span>
+                <span class="list"></span>
+                <p class="result-count">Showing {{ start }}-{{ finish }} of {{ count }} relults</p>
+            </div>
+            <div class="float-right">
+                <form action="#" method="get" class="order-by">
+                    <p>Sort by :</p>
+                    <select class="orderby" name="orderby">
+                        <option>popularity</option>
+                        <option selected="selected">average rating</option>
+                        <option>newness</option>
+                        <option>price: low to high</option>
+                        <option>price: high to low</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
