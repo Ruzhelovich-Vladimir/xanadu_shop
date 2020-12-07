@@ -1,0 +1,23 @@
+{% load staticfiles %}
+
+<!-- sing up -->
+
+<div class="container">
+    <div class="newsletter-bottom center">
+        <div class="items">
+            <img class="img-responsive" src="{% static 'assets/images/newsletter-bottom.jpg' %}" alt="Newsllter">
+            <div class="text">
+                <h3>Sign Up Special Promotions</h3>
+                <p>Get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                <form action="#" method="get" accept-charset="utf-8">
+                    <input type="text" onblur="if (this.value == '') {this.value = 'Enter your email...';}"
+                        onfocus="if(this.value != '') {this.value = '';}" value="Enter your email..."
+                        class="input-text required-entry validate-email" title="Sign up for our newsletter"
+                        id="newsletter" name="email">
+                    <button class="button button1 hover-white" title="Subscribe" type="submit">Join<i
+                            class="link-icon-white"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+{% load staticfiles %}
+
+<!-- Меню справа-->
+<div class="box-right">
+    <div class="cart hover-menu">
+         <p class="icon-cart" title="Add to cart">
+            <i class="icon"></i>
+            <span class="cart-count">2</span>
+        </p>
+        <div class="cart-list list-menu">
+            <ul class="list">
+                <li>
+                    <a href="home_v1.html#" title="" class="cart-product-image"><img src="{% static 'assets/images/products/1.jpg' %}" alt="Product"></a>
+                    <div class="text">
+                        <p class="product-name">Union Bed</p>
+                        <p class="product-price"><span class="price-old">$700.00</span><span class="price">$350.00</span></p>
+                        <p class="qty">QTY:01</p>
+                    </div>
+                    <a class="close" href="home_v1.html#" title="close"><i class="fa fa-times-circle"></i></a>
+                </li> 
+                <li>
+                    <a href="home_v1.html#" title="" class="cart-product-image"><img src="{% static 'assets/images/products/2.jpg' %}" alt="Product"></a>
+                    <div class="text">
+                        <p class="product-name">Union Bed</p>
+                        <p class="product-price"><span class="price-old">$700.00</span><span class="price">$350.00</span></p>
+                        <p class="qty">QTY:01</p>
+                    </div>
+                    <a class="close" href="home_v1.html#" title="close"><i class="fa fa-times-circle"></i></a>
+                </li>                                   
+            </ul>
+            <p class="total"><span class="left">Total:</span> <span class="right">$1121.98</span></p>
+            <div class="bottom">
+                <a class="link-v1" href="home_v1.html#" title="viewcart">View Cart</a>
+                <a class="link-v1 rt" href="home_v1.html#" title="checkout">Check out</a>
+            </div>
+        </div>
+    </div>
+    <div class="settings hover-menu">
+        <a href="home_v1.html#" title="settings">
+            <span class="icons-setting"></span>
+        </a>
+        <ul class="submenu list-menu align-left">
+            <li>
+                <div class="container-fluid">
+        <!--
+                    <h3>Select Language</h3>
+                    <ul class="language">
+                        <li class="active"><a href="home_v1.html#" title="language"><img src="{% static 'assets/images/lg-1.jpg' %}" alt="language"></a></li>
+                        <li><a href="home_v1.html#" title="language"><img src="{% static 'assets/images/lg-2.jpg' %}" alt="language"></a></li>
+                        <li><a href="home_v1.html#" title="language"><img src="{% static 'assets/images/lg-3.jpg' %}" alt="language"></a></li>
+                        <li><a href="home_v1.html#" title="language"><img src="{% static 'assets/images/lg-4.jpg' %}" alt="language"></a></li>
+                    </ul>
+                
+                    <h3>Select Currency</h3>
+                    <ul class="currency">
+                        <li class="active"><a href="home_v1.html#" title="$"><span class="fa fa-dollar"></span></a></li>
+                        <li><a href="home_v1.html#" title="$"><span class="fa fa-euro"></span></a></li>
+                        <li><a href="home_v1.html#" title="$"><span class="fa fa-cny"></span></a></li>
+                    </ul>
+            -->
+                    <ul class="infor">
+                        <li><span class="fa fa-unlock-alt"></span><a id="openLogin" href="home_v1.html#" title="login">Login / Register</a></li>
+                        <li><span class="fa fa-user"></span><a href="home_v1.html#" title="My Account">My Account</a></li>
+                        <li><span class="fa fa-heart"></span><a href="home_v1.html#" title="My Wishlist">My Wishlist</a></li>
+                        <li><span class="fa fa-check-circle"></span><a href="home_v1.html#" title="Checkout">Checkout</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="search dropdown" data-toggle="modal" data-target=".bs-example-modal-lg">
+        <i class="icon"></i>
+    </div>
+</div>

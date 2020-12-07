@@ -19,9 +19,9 @@ from django.urls import path
 import mainapp.views as mainapp
 
 urlpatterns = [
+    path('', mainapp.main, name='main'),
+    path('index/', mainapp.main, name='main'),
+    path('catalog/', mainapp.catalog, name='catalog'),    
+    path('about/', mainapp.about, name='about'),    
     path('admin/', admin.site.urls),
-    path('', mainapp.main),
-    path('index/', mainapp.main),
-    path('catalog_fullwidth/', mainapp.catalog_fullwidth),    
-    path('about/', mainapp.about),    
 ]
