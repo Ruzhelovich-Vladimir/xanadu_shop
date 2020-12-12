@@ -1,0 +1,18 @@
+[
+    {
+        "model": "mainapp.style",
+        "fields": {
+            "id": 1,
+            "name": "Лагер Светлый",
+            "code": "ЛагерСветлый"
+        }
+    },
+    {
+        "model": "mainapp.style",
+        "fields": {
+            "id": 2,
+            "name": "Лагер",
+            "code": "Лагер"
+        }
+    }
+]

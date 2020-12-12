@@ -1,0 +1,10 @@
+[
+    {
+        "model": "mainapp.warehouse",
+        "fields": {
+            "id": 1,
+            "name": "Основной склад",
+            "code": "ОсновнойСклад"
+        }
+    }
+]

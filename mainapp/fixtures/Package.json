@@ -1,0 +1,26 @@
+[
+    {
+        "model": "mainapp.package",
+        "fields": {
+            "id": 1,
+            "name": "ПЭТ",
+            "code": "пэт"
+        }
+    },
+    {
+        "model": "mainapp.package",
+        "fields": {
+            "id": 2,
+            "name": "банка",
+            "code": "бнк"
+        }
+    },
+    {
+        "model": "mainapp.package",
+        "fields": {
+            "id": 3,
+            "name": "бутылка",
+            "code": "бут"
+        }
+    }
+]

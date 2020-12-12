@@ -4,25 +4,18 @@
 
 {% block content %}
 {% include 'mainapp/index/inc_slider.html' %}
-<!-- Слайдер -->
+{% include 'mainapp/includes/inc_subscribe.html' %}
+{% include 'mainapp/includes/inc_reviews.html' %}
+{% endblock content %}
+
+<!-- 
 {% include 'mainapp/index/inc_banner.html' %}
-<!-- Блок баннеров -->
 <div class="container furniture">
     {% include 'mainapp/index/inc_furniture.html' %}
-    <!-- Блок баннеров фунитуры -->
     {% include 'mainapp/index/inc_аccessories.html' %}
-    <!-- Блок баннеров акцессуаров -->
 </div>
 {% include 'mainapp/index/inc_special_offer.html' %}
-<!-- Блок специальное предложение -->
 {% include 'mainapp/index/inc_featured_products.html' %}
-<!-- Блок товаров фурнитуры -->
-{% include 'mainapp/includes/inc_blogs.html' %}
-<!-- Блок блогов -->
-{% include 'mainapp/includes/inc_subscribe.html' %}
-<!-- Блок подписки на новости -->
-{% include 'mainapp/includes/inc_reviews.html' %}
-<!-- Блок отзовы клиентов -->
-{% include 'mainapp/includes/inc_brands.html' %}
-<!-- Блок бренды -->
-{% endblock content %}
+{% include 'mainapp/includes/inc_blogs.html' %} 
+-->
+<!-- {% include 'mainapp/includes/inc_brands.html' %} -->

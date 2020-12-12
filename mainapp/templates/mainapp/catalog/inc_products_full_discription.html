@@ -6,7 +6,9 @@
         <div class="product">
             <div class="product-images">
                 <a href="#" title="product-images">
-                    <img class="primary_image" src="{% static product.img %}" alt="" />
+                    <img class="primary_image" src="/media/{{ product.filename }}" alt="" />
+                    <!-- <img class="primary_image" src="/static/assets/images/products/featured/1.jpg" alt="" /> -->
+
                 </a>
                 <div class="action">
                     <a class="wish" href="#" title="Wishlist"><i class="icon icon-heart"></i></a>
@@ -14,10 +16,10 @@
                     <a class="add-cart" href="#" title="Add to cart"><i class="icon-bag"></i></a>
                 </div>
             </div>
-            <a href="#" title="{{ product.title }}">
-                <p class="product-title">{{ product.title }}</p>
+            <a href="#" title="{{ product.name }}">
+                <p class="product-title">{{ product.name }}</p>
             </a>
-            <p class="product-price-old">{{ product.old_price }}</p>
+            <p class="product-price-old">{{ product.price }}</p>
             <p class="product-price">{{ product.price }}</p>
             <p class="description">{{ product.description }}</p>
 
