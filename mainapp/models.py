@@ -76,16 +76,21 @@ class Product(models.Model):
     description = models.TextField(
         verbose_name='description', blank=True)
     classification = models.ForeignKey(
-        Classification, on_delete=models.CASCADE)
-    brand = models.ForeignKey(Brand, on_delete=models.CASCADE)
-    package = models.ForeignKey(Package, blank=False, on_delete=models.CASCADE)
+        Classification, on_delete=models.CASCADE, null=True, blank=True)
+    brand = models.ForeignKey(
+        Brand, on_delete=models.CASCADE, null=True, blank=True)
+    package = models.ForeignKey(
+        Package, on_delete=models.CASCADE, null=True, blank=True)
     volume = models.DecimalField(
         verbose_name='volum', blank=True, max_digits=10, decimal_places=2)
     package_qty = models.PositiveSmallIntegerField(
         verbose_name='package qty', blank=False)
-    country = models.ForeignKey(Country, on_delete=models.CASCADE)
-    strong = models.ForeignKey(Strong, on_delete=models.CASCADE)
-    style = models.ForeignKey(Style, on_delete=models.CASCADE)
+    country = models.ForeignKey(
+        Country, on_delete=models.CASCADE, null=True, blank=True)
+    strong = models.ForeignKey(
+        Strong, on_delete=models.CASCADE, null=True, blank=True)
+    style = models.ForeignKey(
+        Style, on_delete=models.CASCADE, null=True, blank=True)
     expiration = models.PositiveSmallIntegerField(
         verbose_name='expiration or zero', blank=False)
     filename = models.ImageField(

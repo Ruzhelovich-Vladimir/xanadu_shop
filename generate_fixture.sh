@@ -1,3 +1,4 @@
+#!/bin/bash
 #./manage.py dumpdata admin > mainapp/fixtures/admin.json #Дамп настройки пользователей
 #./manage.py dumpdata mainapp.Brand > mainapp/fixtures/Brand.json
 #./manage.py dumpdata mainapp.Package > mainapp/fixtures/Package.json

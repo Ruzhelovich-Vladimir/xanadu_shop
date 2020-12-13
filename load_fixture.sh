@@ -1,3 +1,4 @@
+#!/bin/bash
 #./manage.py loaddata admin
 ./manage.py loaddata Brand
 ./manage.py loaddata Package
