@@ -1,0 +1,10 @@
+[
+    {
+        "model": "mainapp.classification",
+        "fields": {
+            "id": 1,
+            "name": "Алкогольная",
+            "code": "Алкогольная"
+        }
+    }
+]

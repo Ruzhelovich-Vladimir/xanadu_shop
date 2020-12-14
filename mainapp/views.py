@@ -1,14 +1,12 @@
+from django.conf import settings
+from django.core import paginator
 from django.shortcuts import render
+from django.utils import timezone
 
-product_simple = {
-    'title':'Bouble Fabric Blazer',
-    'img':'assets/images/products/featured/1.jpg',
-    'old_price':'700.00',
-    'price':'69.90',
-    'description':'Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.'
-}
+from mainapp.models import Brand, Package, Classification, Country, Strong, Style, Product
 
-product_simple_list = [product_simple for inx in range(15)]
+from django.core.paginator import Paginator
+
 
 def main(request):
 
@@ -16,19 +14,22 @@ def main(request):
         'title': 'main'
     }
 
-    return render(request, 'mainapp/index.html',content)
+    return render(request, 'mainapp/index.html', content)
+
 
 def catalog(request):
 
+    page_cnt = 15
+    products = Product.objects.all()
+    paginator = Paginator(products, page_cnt)
+
     content = {
         'title': 'catalog',
-        'products': product_simple_list,
-        'start':1,
-        'finish':15,
-        'count':15
+        'products': paginator
     }
 
-    return render(request, 'mainapp/catalog.html',content)
+    return render(request, 'mainapp/catalog.html', content)
+
 
 def about(request):
 
@@ -36,5 +37,4 @@ def about(request):
         'title': 'about',
     }
 
-    return render(request, 'mainapp/about.html',content)
-
+    return render(request, 'mainapp/about.html', content)

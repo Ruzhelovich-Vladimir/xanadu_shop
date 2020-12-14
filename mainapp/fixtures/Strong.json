@@ -1,0 +1,10 @@
+[
+    {
+        "model": "mainapp.strong",
+        "fields": {
+            "id": 1,
+            "name": "3-5%",
+            "code": "3-5"
+        }
+    }
+]

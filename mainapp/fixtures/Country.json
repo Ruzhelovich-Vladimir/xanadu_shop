@@ -1,0 +1,10 @@
+[
+    {
+        "model": "mainapp.country",
+        "fields": {
+            "id": 1,
+            "name": "Россия",
+            "code": "RUS"
+        }
+    }
+]

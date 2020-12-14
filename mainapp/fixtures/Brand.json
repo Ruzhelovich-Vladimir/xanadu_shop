@@ -1,0 +1,18 @@
+[
+    {
+        "model": "mainapp.brand",
+        "fields": {
+            "id": 1,
+            "name": "Баг-Бир",
+            "code": "БагБир"
+        }
+    },
+    {
+        "model": "mainapp.brand",
+        "fields": {
+            "id": 2,
+            "name": "Козел",
+            "code": "Козел"
+        }
+    }
+]
