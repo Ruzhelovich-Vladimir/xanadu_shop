@@ -1,17 +1,17 @@
 from django.contrib import admin
-from django.urls import path
-
+from django.urls import path, include
 import mainapp.views as mainapp
-
 from django.conf import settings
 from django.conf.urls.static import static
 
+from mainapp import views as mainapp_viws
+
 urlpatterns = [
-    path('', mainapp.main, name='main'),
-    path('index/', mainapp.main, name='main'),
-    path('catalog/', mainapp.catalog, name='catalog'),
-    path('about/', mainapp.about, name='about'),
     path('admin/', admin.site.urls),
+    path('', mainapp_viws.main, name='main'),
+    path('catalog/', include('mainapp.urls', namespace='catalog')),
+    path('about/', mainapp.about, name='about'),
+    path('auth/', include('authapp.urls', namespace='auth')),
 ]
 
 if settings.DEBUG:

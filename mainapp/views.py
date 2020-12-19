@@ -17,7 +17,7 @@ def main(request):
     return render(request, 'mainapp/index.html', content)
 
 
-def catalog(request):
+def catalog(request, pk=None):
 
     page_cnt = 15
     products = Product.objects.all()
