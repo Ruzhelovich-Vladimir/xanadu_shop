@@ -14,9 +14,9 @@
                             / Регистрация</a></li>
                     {% else %}
                     <li>{{ user.first_name }} {{ user.last_name }} ({{ user.username }})</li>
-                    <li><span class="fa fa-user"></span><a href="#" title="Мой профиль">Мой профиль</a>
+                    <li><span class="fa fa-user"></span><a href="#" title="Мой профиль">Профиль</a>
                     </li>
-                    <li><span class="fa fa-heart"></span><a href="#" title="Моя карзина">Моя карзина</a>
+                    <li><span class="fa fa-heart"></span><a href="#" title="Моя карзина">Корзина</a>
                     </li>
                     <li><span class="fa fa-check-circle"></span><a href="{% url 'auth:logout' %}"
                             title="Выйти">Выйти</a>
