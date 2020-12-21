@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+<div class="settings hover-menu">
+    <a href="#" title="настройки">
+        <span class="icons-setting"></span>
+    </a>
+    <ul class="submenu list-menu align-left">
+        <li>
+            <div class="container-fluid">
+                <ul class="infor">
+                    {% if not user.is_authenticated %}
+                    <li><span class="fa fa-unlock-alt"></span><a id="openLogin" href="{% url 'auth:login' %}"
+                            title="login">Войти
+                            / Регистрация</a></li>
+                    {% else %}
+                    <li>{{ user.first_name }} {{ user.last_name }} ({{ user.username }})</li>
+                    <li><span class="fa fa-user"></span><a href="#" title="Мой профиль">Профиль</a>
+                    </li>
+                    <li><span class="fa fa-heart"></span><a href="#" title="Моя карзина">Корзина</a>
+                    </li>
+                    <li><span class="fa fa-check-circle"></span><a href="{% url 'auth:logout' %}"
+                            title="Выйти">Выйти</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
